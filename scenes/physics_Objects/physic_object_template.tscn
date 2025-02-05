@@ -1,0 +1,20 @@
+[gd_scene load_steps=4 format=3 uid="uid://dhef35c7cxb7m"]
+
+[ext_resource type="Texture2D" uid="uid://cd7f1o7kph3f0" path="res://assets/objects/objects.png" id="1_bv8na"]
+[ext_resource type="Texture2D" uid="uid://lidcm616dj8l" path="res://assets/training/Dungeon_B.png" id="2_jq4sp"]
+[ext_resource type="Texture2D" uid="uid://bjskcuwny27jd" path="res://assets/training/Outside_C.png" id="3_w25x2"]
+
+[node name="physicObject" type="StaticBody2D"]
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture = ExtResource("1_bv8na")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+
+[node name="DungeonB" type="Sprite2D" parent="."]
+position = Vector2(22, 494)
+texture = ExtResource("2_jq4sp")
+
+[node name="OutsideC" type="Sprite2D" parent="."]
+position = Vector2(903, 379)
+texture = ExtResource("3_w25x2")

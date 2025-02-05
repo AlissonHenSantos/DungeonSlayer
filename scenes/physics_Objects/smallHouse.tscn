@@ -1,0 +1,24 @@
+[gd_scene load_steps=3 format=3 uid="uid://8pk2p58llr7s"]
+
+[ext_resource type="PackedScene" uid="uid://dhef35c7cxb7m" path="res://scenes/physics_Objects/physic_object_template.tscn" id="1_pfv7c"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_g0q4i"]
+size = Vector2(111, 62)
+
+[node name="physicObject" instance=ExtResource("1_pfv7c")]
+
+[node name="Sprite2D" parent="." index="0"]
+region_enabled = true
+
+[node name="CollisionShape2D" parent="." index="1"]
+position = Vector2(1.5, 73)
+shape = SubResource("RectangleShape2D_g0q4i")
+
+[node name="DungeonB" parent="." index="2"]
+region_enabled = true
+
+[node name="OutsideC" parent="." index="3"]
+position = Vector2(1, 37)
+scale = Vector2(0.643229, 0.537946)
+region_enabled = true
+region_rect = Rect2(192, 336, 192, 224)

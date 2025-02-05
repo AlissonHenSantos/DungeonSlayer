@@ -1,0 +1,41 @@
+[gd_scene load_steps=6 format=3 uid="uid://bjg04tlcqhmcs"]
+
+[ext_resource type="Texture2D" uid="uid://cn2rsy82a4jcp" path="res://assets/tilesets/decor_16x16.png" id="1_hak6l"]
+[ext_resource type="Texture2D" uid="uid://cp022lftyc52r" path="res://assets/tilesets/decor_8x8.png" id="2_d61kq"]
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_5mjrk"]
+texture = ExtResource("1_hak6l")
+0:0/0 = 0
+1:0/0 = 0
+2:0/0 = 0
+3:0/0 = 0
+0:1/0 = 0
+1:1/0 = 0
+2:1/0 = 0
+3:1/0 = 0
+0:2/0 = 0
+1:2/0 = 0
+2:2/0 = 0
+3:2/0 = 0
+0:3/0 = 0
+1:3/0 = 0
+2:3/0 = 0
+3:3/0 = 0
+0:4/0 = 0
+1:4/0 = 0
+2:4/0 = 0
+3:4/0 = 0
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_vpf1r"]
+texture = ExtResource("2_d61kq")
+0:0/0 = 0
+1:0/0 = 0
+0:1/0 = 0
+1:1/0 = 0
+
+[sub_resource type="TileSet" id="TileSet_j63ot"]
+sources/0 = SubResource("TileSetAtlasSource_5mjrk")
+sources/1 = SubResource("TileSetAtlasSource_vpf1r")
+
+[node name="DecorationBaseTerrain" type="TileMapLayer"]
+tile_set = SubResource("TileSet_j63ot")

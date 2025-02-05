@@ -1,0 +1,38 @@
+[gd_scene load_steps=5 format=3 uid="uid://cxmjkfjy2h7wv"]
+
+[ext_resource type="PackedScene" uid="uid://dhef35c7cxb7m" path="res://scenes/physics_Objects/physic_object_template.tscn" id="1_mgqhf"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_27raf"]
+size = Vector2(98, 48)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_oplvr"]
+size = Vector2(66, 22)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_ev1x4"]
+size = Vector2(24, 11)
+
+[node name="physicObject" instance=ExtResource("1_mgqhf")]
+
+[node name="Sprite2D" parent="." index="0"]
+region_enabled = true
+
+[node name="CollisionShape2D" parent="." index="1"]
+position = Vector2(-6, 14)
+shape = SubResource("RectangleShape2D_27raf")
+
+[node name="DungeonB" parent="." index="2"]
+region_enabled = true
+
+[node name="OutsideC" parent="." index="3"]
+position = Vector2(3, 0)
+scale = Vector2(0.584821, 0.5625)
+region_enabled = true
+region_rect = Rect2(192, 0, 224, 336)
+
+[node name="CollisionShape2D2" type="CollisionShape2D" parent="." index="4"]
+position = Vector2(-24, 80)
+shape = SubResource("RectangleShape2D_oplvr")
+
+[node name="CollisionShape2D3" type="CollisionShape2D" parent="." index="5"]
+position = Vector2(50, 88.5)
+shape = SubResource("RectangleShape2D_ev1x4")
